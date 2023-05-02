@@ -1,0 +1,213 @@
+/* google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+    --main-color: #d90429;
+	--text-color: #020102;
+	--big-color: #fff;
+	--blue: #0000ff;
+	--border: #330000;
+	--hover1: #99ff33;
+	--hover2: #ffff99;
+	--hover3: #fbfbf0;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* variables */
+section {
+    padding: 4rem 0 2rem;
+}
+img {
+    width: 100%;
+}
+.home {
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(../images/park4.jpg) no-repeat center left/cover;
+}  
+.home-text {
+    padding-left: 50px;
+}
+.home-text h1 {
+    font-size: 2rem;
+}
+.home-text span {
+    color: yellow;
+}
+.home-text p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+    color: ivory;
+    text-justify: auto;
+    text-align: justify;
+    text-decoration: solid;
+}
+.grid {
+    display: grid;
+    width: 100%;
+    grid-gap: 3.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: flex-start;
+}
+.grid-items {
+    background-color: var(--bg--color);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 3rem;
+    display: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.grid-items:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.parking-img {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+.parking-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.parking-header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+.parking-header span {
+    color: yellowgreen;
+    border-bottom: 2px solid yellowgreen;
+    padding-bottom: 0.1rem;
+  }
+.parking-text {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    color: #3d3d3d;
+    margin-bottom: 1.2rem;
+}
+.parking-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+.parking-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+.parking-btn:hover,
+.parking-btn:active {
+    background-color: #e6e6e6;
+}
+.parking-btn:hover span,
+.parking-btn:active span {
+    margin-left: 1.5rem;
+}
+.footer {
+	background: lightgray;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	align-items: fit-content;
+	justify-content: center;
+	display: fixed;
+}
+.footer .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 0.5rem; 
+}
+.footer .box-container .box h3 {
+	color: var(--text-color);
+	font-size: 1.1rem;
+	padding: 1rem; 
+	position: flex;
+}
+.footer .box-container .box a {
+	color: var(--blue);
+	font-size: 1.1rem;
+	display: block;
+	padding: 0.5rem;
+}
+.footer .box-container .box a i {
+	padding-right: .5rem;
+	color: var(--border);
+}
+.footer .box-container .box a:hover i {
+	padding-right: 2rem;
+}
+.footer .motti {
+	text-align: center;
+	border-top: var(--blue);
+	padding: 1rem;
+	padding-top: 1rem;
+	margin-top: 0.6rem;
+	font-size: 1.1rem;
+}
+.copyrights {
+	padding: 20px;
+	text-align: center;
+	color: var(--big-color);
+	background: var(--text-color);
+}
+
+
+
+
+@media only screen and (max-width: 60em) {
+    body {
+        padding: 3rem;
+    }
+    .grid {
+        grid-gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-gap: 1rem;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="serve.css">
+
+    <!--Botstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--Box Icons-->
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="idField">
+                        <i class="fa fa-key"></i>                        <input type="user_id" placeholder="Id">
+                    </div>
+
+                    <div class="input-field" id="nameField">
+                        <i class="fa fa-user"></i>
+                        <input type="user_name" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa fa-envelope"></i>
+                        <input type="user_email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field" id="phoneField">
+                        <i class="fa fa-phone"></i>
+                        <input type="user_phone" placeholder="Phone">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p>Lost Password <a href="#">Click Here|</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="loginBtn" class="disable">Log in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="services.js"></script>
+</body>
+</html>

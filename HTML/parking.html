@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Details</title>
+    <link rel="stylesheet" href="parking.css">
+   
+    <!--Botstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--Box Icons-->
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <ul>
+                <li class="active form _1_vehicle_details">
+                    <div>
+                        <p>1</p>
+                    </div>
+                </li>
+                <li class="form_2_vehicle_details">
+                    <div>
+                        <p>2</p>
+                    </div>
+                </li>
+                <li class="form_3_vehicle_details">
+                    <div>
+                        <p>3</p>
+                    </div>
+                </li>
+                <li class="form_4_vehicle_details">
+                    <div>
+                        <p>4</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form_wrap">
+            <div class="form_1 data_info">
+                <h2>Vehicle Details</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="vehicle_type">Type</label>
+                            <input type="text" name="Vehicle Type" id="vehicle_type">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="car_id">Car Id</label>
+                            <input type="text" name="Car Id" id="car_id">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="car_owner">Owner</label>
+                            <input type="text" name="Car Owner" id="car_owner">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="category">Category</label>
+                            <input type="text" name="Category" id="category">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_2 data_info" style="display: none;">
+                <h2>Parking Details</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="parking_id">Parking Id</label>
+                            <input type="text" name="Parking Id" id="parking_id">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="parking_car_id">Car Id</label>
+                            <input type="text" name="Parking Car Id" id="parking_car_id">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="parking_type">Parking Type</label>
+                            <input type="text" name="Parking Type" id="parking_type">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_3 data_info" style="display: none;">
+                <h2>Parking Fee</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="parking_fee_date">Date In</label>
+                            <input type="text" name="Parking Fee Date" id="parking_fee_date">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="parking_fee_amount">Amount</label>
+                            <input type="text" name="Parking Fee Amount" id="parking_fee_amount">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="parking_fee_date">Date Out</label>
+                            <input type="text" name="Parking Fee Date" id="parking_fee_date">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="parking_fee_id">Fee Id</label>
+                            <input type="text" name="Parking Fee Id" id="parking_fee_id">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_4 data_info" style="display: none;">
+                <h2>Parking Slot</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="parking_slot_type">Type</label>
+                            <input type="text" name="Parking Slot Type" id="parking_slot_type">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="parking_slot_id">Slot Id</label>
+                            <input type="text" name="Parking Slot Id" id="parking_slot_id">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="parking_slot_car_number">Slot Number</label>
+                            <input type="text" name="Parking Slot Car Number" id="parking_slot_car_number">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="btns_wrap">
+            <div class="common_btns form_1_btns">
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <i class="fa fa-arrow-right"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_2_btns" style="display: none;">
+                <button type="button" class="btn_back">
+                    <span class="icon">
+                        <i class="fa fa-arrow-left"></i>
+                    </span>
+                    Back
+                </button>
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <i class="fa fa-arrow-right"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_3_btns" style="display: none;">
+                <button type="button" class="btn_back">
+                    <span class="icon">
+                        <i class="fa fa-arrow-left"></i>
+                    </span>
+                    Back
+                </button>
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <i class="fa fa-arrow-right"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_4_btns"  style="display: none;">
+                <button type="button" class="btn_back">
+                    <span class="icon">
+                        <i class="fa fa-arrow-left"></i>
+                    </span>
+                    Back
+                </button>
+                <button type="button" class="btn_done">Done
+                    <span class="icon"></span>
+
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal_wrapper">
+        <div class="shadow"></div>
+        <div class="active success_wrap">
+            <span class="icon">
+                <i class="fa fa-check-circle"></i>
+            </span>
+            <p>You have successfully complited the process.</p>
+            <button id="btn_done">Done</button>
+     </div>
+    </div>
+    
+
+
+
+<script src="parking.js"></script>
+
+</body>
+</html>
